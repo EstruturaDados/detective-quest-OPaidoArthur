@@ -1,4 +1,17 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {}
+    "name": "Detective Quest C Dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.makefile-tools"
+    ],
+    "postCreateCommand": "gcc --version",
+    "remoteUser": "vscode",
+    "features": {}
 }
